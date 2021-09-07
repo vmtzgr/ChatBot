@@ -1,0 +1,125 @@
+:root {
+  --header: #1da1f2;
+  --apple-blue: rgb(0, 122, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+header {
+  background-color: var(--header);
+  /* border-bottom: 1px solid --header;
+  border-radius: 0px 0px 10px 10px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 1.5rem 0;
+}
+
+.conatiner {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.chat-bot-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-column: 1/4;
+}
+
+.chat-bot-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-column: 7/9;
+}
+
+.chat-bot-status span {
+  margin: 0 1rem;
+}
+
+.dot {
+  background-color: greenyellow;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* CHAT SECTION */
+
+.chat {
+  width: 100%;
+  margin: auto 1rem;
+}
+
+/* INPUT SECTION */
+
+.in {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.border {
+  padding: 2rem 2rem;
+  align-items: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
+
+.border input {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2.2rem;
+  grid-column: 1/4;
+}
+
+.border textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  grid-column: 8/9;
+  border: 0px solid transparent;
+  background-color: var(--apple-blue);
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
