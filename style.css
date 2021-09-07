@@ -88,7 +88,8 @@ img {
 .chat {
   width: 100%;
   margin: auto 1rem;
-  overflow: hidden;
+
+  position: relative;
 
 }
 
