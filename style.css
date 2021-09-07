@@ -48,8 +48,13 @@ img {
 .chat-bot-header-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   grid-column: 1/4;
+  margin-left: 20px;
+}
+
+.chat-bot-header-content span {
+  margin-left: 10px;
 }
 
 .chat-bot-status {
@@ -76,6 +81,8 @@ img {
 .chat {
   flex: 1;
   overflow: auto;
+  max-width: 525px;
+  margin: 0 auto;
 }
 
 .message {
@@ -112,10 +119,11 @@ img {
 .message.bot span {
   background-color: lightgrey;
   width: 70%;
+  color: black;
 }
 
 .message.user span {
-  background-color: var(--apple-blue);
+  background-color: var(--header);
   width: 70%;
 }
 
@@ -128,18 +136,18 @@ img {
 }
 
 .border {
-  padding: 2rem 2rem;
   align-items: center;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 10px;
+  margin: 10px;
+  overflow-x: hidden;
 }
 
 .border input {
-  border: 1px solid lightgray;
-  border-radius: 10px;
+  border: 0;
   padding: 10px;
   font-size: 2.2rem;
-  grid-column: 1/4;
+  grid-column: 1/9;
 }
 
 .border textarea:focus,
@@ -148,11 +156,12 @@ input:focus {
 }
 
 button {
-  grid-column: 8/9;
+  grid-column: 9/9;
   border: 0px solid transparent;
   background-color: var(--apple-blue);
   border-radius: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  margin-right: 10px;
 }
